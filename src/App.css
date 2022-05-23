@@ -1,40 +1,95 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 .App {
+  /* background-image: url("./assets/ad.mp4"); */
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: #A4A6A3;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: absolute;
+  bottom: 16%;
+  color: #f1f1f17a;
+  padding: 32px;
+  right: 24px;
+  /* margin-left: 24px; */
+  transition: opacity 3s ease-in-out;
+  background: linear-gradient(9deg, #ffffff0d, #ffffff00);
+}
+
+.product-title, .main-title {
+  /* position: relative; */
   text-align: center;
+  /* text-decoration: underline;
+  text-decoration-skip-ink: none; */
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .product-title:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 200px;
+  bottom: -4px;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: rgb(108,117,125);
+} */
+
+.product-box {
+  /* margin: 24px auto; */
+  color: #626566;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.product-image {
+  position: relative;
+  display: inline-block;
+  margin-top: 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.product-image img {
+  position: relative;
+  z-index: 20;
+  top: -20px;
+}
+.nav-tag:nth-child(even) {
+  background-color: #B0B1AE !important;
+}
+.nav-tag:nth-child(odd) .product-box {
+  color: #B0B1AE ;
+}
+
+.nav-tag:nth-child(odd) >.product-title{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-tag:last-child .product-box {
+  color: "#B0B1AE"
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-image .fa-solid {
+  position: absolute;
+  bottom: 180px;
+  color: rgb(88, 80, 80);
+}
+.product-image:after {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 96%;
+  border-radius: 50%;
+  background-color: rgba(130, 125, 125, 0.404);
+  bottom: 0;
+  right: 6%;
+  z-index: -0;
 }
