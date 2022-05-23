@@ -2,29 +2,31 @@ import React from 'react';
 const Header = () => {
   return (
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-md fw-bold">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-expand-lg navbar-light bg-white">
+        <div className="container-md fw-bold">
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand fs-3" href="#">THE BAGS</a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-              <li class="nav-item px-md-3">
-                <a class="nav-link active" aria-current="page" href="#">products</a>
+          <a className="navbar-brand fs-3" href="#">THE BAGS</a>
+          <span className='d-md-none fs-5'>
+            <i className="fa-solid fa-cart-shopping"></i>
+          </span>
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li className="nav-item px-md-3">
+                <a className="nav-link active" aria-current="page" href="#">products</a>
               </li>
-              <li class="nav-item  px-md-3">
-                <a class="nav-link" href="/upcoming">Upcoming</a>
+              <li className="nav-item  px-md-3">
+                <a className="nav-link" href="/upcoming">Upcoming</a>
               </li>
-              <li class="nav-item  px-md-3">
-                <a class="nav-link" href='/offers'>Offers</a>
+              <li className="nav-item  px-md-3">
+                <a className="nav-link" href='/offers'>Offers</a>
               </li>
             </ul>
           </div>
-
-          <div className='fs-5'>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
+          <span className='d-none d-md-block fs-5'>
+            <i className="fa-solid fa-cart-shopping"></i>
+          </span>
         </div>
       </nav>
     </header>
