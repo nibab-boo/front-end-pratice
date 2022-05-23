@@ -21,7 +21,7 @@ const items = [
   {
     id: 2,
     title: "The Bag For The Man",
-    image: WomanBag,
+    image: GymBag,
     description: "Those who wants more",
     status: "available"
   },
@@ -56,6 +56,9 @@ function App() {
         <ForYou />
         < NavTag list={productList} title = "products"/>
         < NavTag list={upcomingList} title = "upcomings"/>
+      </div>
+      <div className="footer">
+        <p className="my-0">The Bag @copyright 2020</p>
       </div>
     </div>
   );
