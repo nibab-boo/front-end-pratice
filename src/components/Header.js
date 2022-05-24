@@ -10,6 +10,19 @@ const Header = () => {
     } else {
       navbar.style.background = "initial";
     }
+    // const navLinks = navbar.querySelectorAll('.nav-link');
+    // navLinks.forEach((navLink) => {
+    //   const itemContainer = (document.querySelector(`#${navLink.dataset.id}`));
+    //   console.log(itemContainer);
+    //   if ( itemContainer && itemContainer.offsetHeight <= 50) {
+    //     console.log("less than 50")
+    //     if (!navLink.classList.contains("active")) navLink.classList.add("active");
+    //   }
+    //   if ( itemContainer && itemContainer.offsetHeight <= (window.innerHeight / 2)) {
+    //     console.log("more than half")
+    //     if (navLink.classList.contains("active")) navLink.classList.remove("active");
+    //   }
+    // })
   })
 
   return (
@@ -26,13 +39,13 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
               <li className="nav-item px-md-3">
-                <a className="nav-link active" aria-current="page" href="#">products</a>
+                <a className="nav-link" aria-current="page" href="#" data-id="products">Products</a>
               </li>
               <li className="nav-item  px-md-3">
-                <a className="nav-link" href="/upcoming">Upcoming</a>
+                <a className="nav-link" href="/upcoming" data-id="upcomings">Upcoming</a>
               </li>
               <li className="nav-item  px-md-3">
-                <a className="nav-link" href='/offers'>Offers</a>
+                <a className="nav-link" href='/offers' data-id='offers'>Offers</a>
               </li>
             </ul>
           </div>
