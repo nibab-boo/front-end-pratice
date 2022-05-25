@@ -1,5 +1,5 @@
 import React from 'react';
-import ad from './../assets/ad.mp4'
+// import ad from './../assets/ad.mp4'
 import bag from './../assets/bag.png'
 
 const Video = () => {
@@ -17,7 +17,7 @@ const Video = () => {
     <>
       <div style={{backgroundImage: `url(${bag})`, backgroundPosition: "center", backgroundSize: "cover"}} alt="bag" id="myVideo">
         <video autoPlay muted id="myVideo" onTimeUpdate={ (e) => videoStopper(e)}>
-          <source src={ad} type="video/mp4" />
+          <source src="https://youtu.be/1VZXw8z1WZ0" type="video/mp4" />
         </video>
         <div className="content mt-5 mt-md-0 opacity-0 text-center">
           <h3 className=' d-block'>THE BAG.v22</h3>
