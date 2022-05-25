@@ -4,7 +4,6 @@ import bag from './../assets/bag.png'
 
 const Video = () => {
   const videoStopper = (e) => {
-    console.log(e.currentTarget.currentTime)
     if (e.currentTarget.currentTime >= 58){
       // document.querySelector("div#myVideo").classList.remove('opacity-0');
       e.currentTarget.pause();
@@ -12,12 +11,12 @@ const Video = () => {
       e.currentTarget.classList.add('opacity-0');
     }
   }
-
+  console.log("I DO NOT HOLD THE COPYRIGHTS FOR THE IMAGES AND VIDEO USED HERE. THIS IS PURELY FOR THE RECREATIONAL AND NON-PROFIT REASONS.")
   return (
     <>
       <div style={{backgroundImage: `url(${bag})`, backgroundPosition: "center", backgroundSize: "cover"}} alt="bag" id="myVideo">
         <video autoPlay muted id="myVideo" onTimeUpdate={ (e) => videoStopper(e)}>
-          <source src="https://youtu.be/1VZXw8z1WZ0" type="video/mp4" />
+          <source src="https://videoforawsamplifybucket.s3.ap-northeast-1.amazonaws.com/ad.mp4" type="video/mp4" />
         </video>
         <div className="content mt-5 mt-md-0 opacity-0 text-center">
           <h3 className=' d-block'>THE BAG.v22</h3>
